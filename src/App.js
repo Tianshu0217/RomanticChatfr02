@@ -6,7 +6,7 @@ function App() {
     {
       sender: "AI",
       text:
-        "Hello, I’m your AI companion, here to provide attentive, thoughtful support and clear guidance. You can share your recent challenges or concerns with me, and I will respond with professionalism, empathy, and practical insights. How can I assist you today?",
+        "Hello, I'm SincereCompanionAl, here to provide attentive, thoughtful support and clear guidance. You can share your recent challenges or concerns with me, and I will respond with professionalism, sincerity, and practical insights. How can I assist you today?",
     },
   ]);
   const [input, setInput] = useState("");
