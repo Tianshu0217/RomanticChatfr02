@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d573c406-bc2a-4d7e-a74a-b3209d353877/resourceGroups/appsvc_linux_westcentralus_basic/providers/Microsoft.Web/sites/RomanticChatbk02",
+    "appService.deploySubpath": "backend"
+}
