@@ -3,16 +3,13 @@ name: Deploy Frontend to Azure Static Web Apps
 on:
   push:
     branches: [ main ]
-    paths:
-      - 'frontend/**'
-      - '.github/workflows/**'
+    paths: [ 'frontend/**', '.github/workflows/**' ]
 
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,6 +20,6 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: upload
-          app_location: frontend       # 你的前端目录
-          output_location: build       # CRA 用 build；如果是 Vite 改成 dist
-          # app_build_command: "npm run build"  # 需要更稳可解注
+          app_location: frontend
+          output_location: build     # 如果是 Vite 改成 dist
+          production_branch: main    # 和 SWA 的 Production Branch 保持一致
