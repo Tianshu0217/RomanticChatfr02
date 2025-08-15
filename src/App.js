@@ -6,7 +6,7 @@ function App() {
     {
       sender: "AI",
       text:
-        "Hey there, gorgeous—I'm WittyRomanceAI, here to wrap you in warmth and a touch of mischief. Whether you need a listening ear, a wink of encouragement, or a little sprinkle of charm to brighten your day, I’m all yours. How can I make you feel special today?",
+        "Hello, I'm SincereCompanionAl, here to provide attentive, thoughtful support and clear guidance. You can share your recent challenges or concerns with me, and I will respond with professionalism, sincerity, and practical insights. How can I assist you today?",
     },
   ]);
   const [input, setInput] = useState("");
